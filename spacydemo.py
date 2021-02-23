@@ -1,18 +1,18 @@
-# spaCy  NLP 自然语言文本处理库测试，NLTK也是一种。
+# spaCy测试。  spaCy是 NLP 自然语言文本处理库，NLTK也是一种。
 # Author: markwy@126.com
 # History:  2021.2.22 created.
 
 # https://spacy.io/usage/
 
 # pip install -U spacy
-# python -m spacy info 查看spacy版本，当前是3.0.0
+# python -m spacy info 查看spacy版本，当前默认安装的是3.0.0
 
 # 需安装语言模型库：en_core_web_sm （en表示法已废弃）。
 # 此处以英语为例，https://spacy.io有中文库
 # 语言库：
 # 参考了 https://zhuanlan.zhihu.com/p/56725151 
-#   注意要把里面下载文件的版本从2.0.0改为3.0.0，否则报兼容错误
-# 下载：
+#   
+# 下载（注意要把里面下载文件的版本从2.0.0改为3.0.0，否则运行时报兼容错误）：
 #   https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.0.0/en_core_web_sm-3.0.0.tar.gz下载并按安装
 # 查语言库对应的spaCy版本:
 #   https://github.com/explosion/spacy-models/blob/master/compatibility.json
