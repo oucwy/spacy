@@ -18,21 +18,17 @@
 #   https://github.com/explosion/spacy-models/blob/master/compatibility.json
 # 安装：
 #   pip install en_core_web_sm-3.0.0.tar.gz
-
-# 运行本程序结果：
-# spaCy
-# is
-# a
-# NPL
-# processor
-# lib
-# 完成分词
+# 参考：https://www.cnblogs.com/panchuangai/p/13695902.html
 
 
 import spacy
 import en_core_web_sm
 nlp = en_core_web_sm.load()
-doc = nlp(u'spaCy is a NPL processor lib.')
+doc = nlp(u"bitcoin is a kind of digital currency not issued by any goverment. It's price reaches $58,000 in February 2021. ")
 
 for token in doc:
-    print(token)
+    print(token)                        # 分词
+    print(token.text, "--", token.pos_) # 标注词性
+
+for ent in doc.ents:
+    print(ent.text, ent.label_)         # 标注实体
